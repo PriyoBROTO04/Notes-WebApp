@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+  <link rel="stylesheet" href="/assets/index-90fda75d.css">
+</head>
+
+<body class="bg-[#292929] text-[#f6f6f6] font-Popins w-full h-[100vh] relative overflow-x-hidden  ">
+    <div class="container translate-x-[100%] px-6 pt-5 editor absolute w-full min-h-full max-h-fit bg-[#292929] z-10 transition-transform duration-500">
+        <div class="flex justify-between items-center mb-5">
+            <button class="back bg-[#3d3d3d] px-4 py-[10px] rounded-[30%]"><i
+                    class="fa-solid fa-chevron-left relative top-[1px]"></i></button>
+
+            <button class="save bg-[#3d3d3d] px-3 py-[11.5px] rounded-xl">save</button>
+        </div>
+
+        
+
+        <div class="colors flex justify-between w-full px-10 bg-[#292929] ">
+            <button class="color active w-[30px] h-[30px] rounded-full bg-red-300" data-color="bg-red-300" data-text="text-red-300"></button>
+            <button class="color w-[30px] h-[30px] rounded-full bg-yellow-300" data-color="bg-yellow-300" data-text="text-yellow-300"></button>
+            <button class="color w-[30px] h-[30px] rounded-full bg-green-300" data-color="bg-green-300" data-text="text-green-300"></button>
+            <button class="color w-[30px] h-[30px] rounded-full bg-cyan-300" data-color="bg-cyan-300" data-text="text-cyan-300"></button>
+            <button class="color w-[30px] h-[30px] rounded-full bg-purple-300" data-color="bg-purple-300" data-text="text-purple-300"></button>
+        </div>
+
+
+        <textarea name="titletext" id="title" cols="30" rows="10"
+            class="w-full h-24 text-4xl font-medium pt-6 bg-[#292929] resize-none outline-none "
+            placeholder="Title"></textarea>
+        <textarea name="desctext" id="desc" cols="2" rows="5"
+            class="w-full h-[60%] text-lg pt-3 bg-[#292929] resize-none outline-none overflow-hidden "
+            placeholder="Type something...">
+        </textarea>
+
+
+
+    </div>
+    <div class="helper text-2xl text-neutral-500 text-center absolute top-[50%] w-full -translate-y-[50%]">Click <i
+            class="fa-solid fa-plus text-xl"></i> to add a note</div>
+    <div class="container home px-6 pt-5 transition-[opacity, transform] duration-500">
+        <header class="flex items-center justify-between">
+            <div class="text-3xl">Notes</div>
+            <div class="seachbox bg-[#3d3d3d] py-2 px-3 rounded-[30%]"><i
+                    class="relative fa-solid fa-magnifying-glass top-[0.5px]"></i></div>
+
+        </header>
+
+
+
+
+
+
+        <main class="pt-5">
+            <div class="grid text-black font-medium">
+
+
+
+
+            </div>
+        </main>
+        <button class="addbtn rounded-full bg-[#3d3d3d] py-[15px] px-[18px]  bottom-5 right-5 fixed"><i
+                class="fa-solid fa-plus top-[2px] relative text-xl"></i></button>
+    </div>
+
+
+
+
+
+
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="https://kit.fontawesome.com/0fefc49e08.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
