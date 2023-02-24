@@ -12,12 +12,13 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
-  <script type="module" crossorigin src="./assets/index-826b86e5.js"></script>
-  <link rel="stylesheet" href="./assets/index-3fc9abe9.css">
+  <script type="module" crossorigin src="./assets/index-70c4750f.js"></script>
+  <link rel="stylesheet" href="./assets/index-1dfaccc4.css">
 </head>
 
-<body class="bg-[#292929] text-[#f6f6f6] font-Popins w-full h-[100vh] relative overflow-x-hidden  ">
-    <div class="container translate-x-[100%] px-6 pt-5 editor absolute w-full min-h-full max-h-fit bg-[#292929] z-10 transition-transform duration-500">
+<body class="bg-[#222222] text-[#f6f6f6] font-Popins w-full h-[100vh] relative overflow-x-hidden  ">
+    <div
+        class="translate-x-[100%] lg:translate-x-[200%] px-6 pt-5 editor absolute w-full lg:px-20 lg:w-1/2 min-h-full max-h-fit bg-[#292929] z-10 transition-transform duration-500">
         <div class="flex justify-between items-center mb-5">
             <button class="back bg-[#3d3d3d] px-4 py-[10px] rounded-[30%]"><i
                     class="fa-solid fa-chevron-left relative top-[1px]"></i></button>
@@ -25,14 +26,19 @@
             <button class="save bg-[#3d3d3d] px-3 py-[11.5px] rounded-xl">save</button>
         </div>
 
-        
 
-        <div class="colors flex justify-between w-full px-10 bg-[#292929] ">
-            <button class="color active w-[30px] h-[30px] rounded-full bg-red-300" data-color="bg-red-300" data-text="text-red-300"></button>
-            <button class="color w-[30px] h-[30px] rounded-full bg-yellow-300" data-color="bg-yellow-300" data-text="text-yellow-300"></button>
-            <button class="color w-[30px] h-[30px] rounded-full bg-green-300" data-color="bg-green-300" data-text="text-green-300"></button>
-            <button class="color w-[30px] h-[30px] rounded-full bg-cyan-300" data-color="bg-cyan-300" data-text="text-cyan-300"></button>
-            <button class="color w-[30px] h-[30px] rounded-full bg-purple-300" data-color="bg-purple-300" data-text="text-purple-300"></button>
+
+        <div class="colors flex justify-between w-full lg:w-[50%] px-10 lg:px-0 py-5 bg-[#292929] space-x-4">
+            <button class="color active w-[30px] h-[30px] rounded-full bg-red-300" data-color="bg-red-300"
+                data-text="text-red-300"></button>
+            <button class="color w-[30px] h-[30px] rounded-full bg-yellow-300" data-color="bg-yellow-300"
+                data-text="text-yellow-300"></button>
+            <button class="color w-[30px] h-[30px] rounded-full bg-green-300" data-color="bg-green-300"
+                data-text="text-green-300"></button>
+            <button class="color w-[30px] h-[30px] rounded-full bg-cyan-300" data-color="bg-cyan-300"
+                data-text="text-cyan-300"></button>
+            <button class="color w-[30px] h-[30px] rounded-full bg-purple-300" data-color="bg-purple-300"
+                data-text="text-purple-300"></button>
         </div>
 
 
@@ -49,12 +55,15 @@
     </div>
     <div class="helper text-2xl text-neutral-500 text-center absolute top-[50%] w-full -translate-y-[50%]">Click <i
             class="fa-solid fa-plus text-xl"></i> to add a note</div>
-    <div class="container home px-6 pt-5 transition-[opacity, transform] duration-500">
+    <div class="container mx-auto home min-h-full max-h-fit px-6 pt-5 transition-[opacity, transform] duration-500 relative">
         <header class="flex items-center justify-between">
             <div class="text-3xl">Notes</div>
-            <div class="searchbox bg-[#3d3d3d] py-2 px-3 rounded-xl flex items-center justify-between ease-out transition-all  duration-300 " >
-                <input type="text" class="searchinput w-0 flex-grow-[0.9] focus:outline-none text-neutral-50 bg-transparent ">
-                <i class="searchbtn fa-solid fa-magnifying-glass"></i></div>
+            <div
+                class="searchbox bg-[#3d3d3d] py-2 px-3 rounded-xl flex items-center justify-between ease-out transition-all  duration-300 ">
+                <input type="text"
+                    class="searchinput w-0 flex-grow-[0.9] focus:outline-none text-neutral-50 bg-transparent ">
+                <i class="searchbtn fa-solid fa-magnifying-glass"></i>
+            </div>
 
         </header>
 
@@ -71,8 +80,9 @@
 
             </div>
         </main>
-        <button class="addbtn rounded-full bg-[#3d3d3d] py-[15px] px-[18px]  bottom-5 right-5 fixed"><i
-                class="fa-solid fa-plus top-[2px] relative text-xl"></i></button>
+        <div class="w-[90%] lg:w-[95%] absolute bottom-5"><button class="addbtn rounded-full bg-[#3d3d3d] py-[15px] px-[18px]  float-right"><i
+            class="fa-solid fa-plus top-[2px] relative text-xl"></i></button></div>
+        
     </div>
 
 
@@ -80,7 +90,8 @@
 
 
 
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+
     
     <script src="https://kit.fontawesome.com/0fefc49e08.js" crossorigin="anonymous"></script>
 </body>
